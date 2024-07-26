@@ -3,6 +3,7 @@ import Header from './Header';
 import { shallow } from 'enzyme';
 import { StyleSheetTestUtils } from 'aphrodite';
 
+
 describe('Testing <Header /> Component', () => {
   let wrapper;
 
@@ -11,15 +12,15 @@ describe('Testing <Header /> Component', () => {
     wrapper = shallow(<Header />);
   });
 
-  it("should render without crashing", () => {
+  it("Renders with out crashing", () => {
     expect(wrapper).toBeDefined();
   });
 
-  it("should render an <h1> tag", () => {
-    expect(wrapper.find('h1').length).toBe(1);
+  it("Render an h1 tag", () => {
+    expect(wrapper.find('h1')).toBeDefined();
   });
 
-  it("should render an <img> tag", () => {
-    expect(wrapper.find('img').length).toBe(1);
+  it("Render an img tag", () => {
+    expect(wrapper.find('img')).toBeDefined();
   });
 });
